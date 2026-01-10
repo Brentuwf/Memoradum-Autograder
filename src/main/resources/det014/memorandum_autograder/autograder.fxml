@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="TOP_CENTER"
+      spacing="20">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Title -->
+    <Label text="Memorandum Autograder">
+        <style>
+            -fx-font-size: 24px;
+            -fx-font-weight: bold;
+        </style>
+    </Label>
+
+    <!-- Left-aligned content -->
+    <VBox alignment="TOP_LEFT" spacing="10">
+
+        <Label text="Memorandum File"/>
+
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Button text="Open"/>
+            <Label fx:id="fileLabel" text=""/>
+        </HBox>
+
+        <Button text="Check"/>
+
+    </VBox>
+
+</VBox>
